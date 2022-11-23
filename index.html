@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Estamparia</title>
+  <link rel="icon" type="image/x-icon" href="assets//camisa.png">
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+<body>
+
+
+
+
+  <div class="container">
+
+    <!--Barra de Navegação-->
+    <header id="header">
+      <a class="logo"><span>NEXT</span> ESTAMPARIA</a>
+      <nav id="nav">
+        <!--MenuHamburguer-->
+        <button id="btn-menu">
+          <span id="burguer-menu"></span>
+        </button>
+        
+      <!--Itens da Barra de Nav-->
+        <ul id="menu">
+          <li><a>(55)5555-5555</a></li>
+          <li><a href="#cmFunciona">Como Funciona?</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+       <!--Slider de imagens-->
+      <div id="welcome" class="swiper">
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="assets/imagem1.png"></div>
+        <div class="swiper-slide"><img src="assets/imagem2.jpg"></div>
+        <div class="swiper-slide"><img src="assets/imagem4.jpg"></div>
+
+      </div>
+
+      
+    </div>
+
+
+  <div class="cards">
+    <!--TXT INTRODUÇÃO-->
+    <section class="card">
+      <h1>QUEM NÓS SOMOS?</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque gravida aliquet. Mauris
+        rhoncus vitae metus ut mollis. Sed suscipit magna felis, at cursus metus ornare iaculis. Pellentesque finibus
+        egestas orci, at sollicitudin massa.</p>
+    </section>
+
+    <!--TXT Explicando o serviço-->
+    <div class="card" id="cmFunciona">
+      <h1>SERIGRAFIA</h1>
+      <p>A Serigrafia também conhecida como silk-screen, é um tipo de impressão à base de estêncil. A tela, que é a
+        matriz serigráfica é esticada em um quadro de madeira, alumínio ou aço. O processo de impressão consiste em
+        vazar a tinta através da tela preparada. A matriz é gravada por fotosensibilidade.</p>
+    </div>
+   
+    <img class="imgMid" src="assets/imagem3.jpg">
+    <!--TXT Como a Empresa Funciona-->
+    <div class="card">
+      <h1>COMO NÓS TRABALHAMOS?</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque gravida aliquet. Mauris
+        rhoncus vitae metus ut mollis. Sed suscipit magna felis, at cursus metus ornare iaculis. Pellentesque finibus
+        egestas orci, at sollicitudin massa. </p>
+    </div>
+  </div>
+
+    <!--Parte dos Contatos-->
+    <h2 id="h2Contato">CONTATO</h2>
+    <div class="contato" id="contact">
+      <ul>
+        <li><a href="https://web.whatsapp.com/send?phone=5551111112222"></a><img src="assets/wpp.png">(55)5555-5555</li>
+        <li><img src="assets/gmail.png">NextEstampa@gmail.com</li>
+      </ul>
+
+     <!--Endereço(Google Maps)-->
+      <div class="localizacao">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7190.036212720635!2d-74.18503874936148!3d40.739192912727795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2537d98c396f9%3A0xb97c287a2ef95f43!2sInstituto%20de%20Tecnologia%20de%20Nova%20Jersey!5e0!3m2!1spt-BR!2sbr!4v1653487604413!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <!--Rodapé-->
+    <footer>
+      <a href="https://github.com/viniekj/viniekj">made by @Viniekj</a>
+
+    </footer>
+
+
+  </div>
+
+
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+
+    });</script>
+
+  <script src="menu.js"></script>
+
+</body>
+
+</html>
